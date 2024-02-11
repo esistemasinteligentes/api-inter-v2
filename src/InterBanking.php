@@ -61,7 +61,7 @@ class InterBanking
                 $options
             );
 
-            return (array) json_decode($response->getBody()->getContents());
+            return (array) json_decode($response->getBody()->getContents(), true);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
         } catch (\Exception $e) {
@@ -95,7 +95,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -119,7 +119,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -143,7 +143,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -167,7 +167,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -191,7 +191,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -221,7 +221,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -243,7 +243,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -267,7 +267,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -290,7 +290,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -313,7 +313,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -336,7 +336,7 @@ class InterBanking
                 $options
             );
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -362,7 +362,7 @@ class InterBanking
                 $options
             );
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -384,7 +384,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -406,7 +406,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -430,7 +430,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -456,7 +456,7 @@ class InterBanking
                 $options
             );
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -477,7 +477,7 @@ class InterBanking
                 $options
             );
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -499,7 +499,7 @@ class InterBanking
                 $options
             );
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -522,7 +522,7 @@ class InterBanking
                 $options
             );
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -548,7 +548,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -570,7 +570,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -593,7 +593,7 @@ class InterBanking
                 $options
             );
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -616,7 +616,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -639,7 +639,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -662,7 +662,7 @@ class InterBanking
                 $options
             );
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -688,7 +688,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -712,7 +712,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -736,7 +736,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -760,7 +760,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -784,7 +784,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -808,7 +808,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -830,7 +830,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -858,7 +858,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -883,7 +883,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -905,7 +905,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -930,7 +930,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -955,7 +955,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -983,7 +983,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -1008,7 +1008,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -1030,7 +1030,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -1055,7 +1055,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -1081,7 +1081,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -1106,7 +1106,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -1131,7 +1131,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -1154,7 +1154,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -1181,7 +1181,7 @@ class InterBanking
                 $options
             );
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -1205,7 +1205,7 @@ class InterBanking
             https: //cdpj.partners.bancointer.com.br/pix/v2/webhook/{chave}
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -1227,7 +1227,7 @@ class InterBanking
                 $options
             );
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
@@ -1252,7 +1252,7 @@ class InterBanking
             );
 
             $statusCode = $response->getStatusCode();
-            $result = json_decode($response->getBody()->getContents());
+            $result = json_decode($response->getBody()->getContents(), true);
             return array('status' => $statusCode, 'response' => $result);
         } catch (ClientException $e) {
             return $this->parseResultClient($e);
